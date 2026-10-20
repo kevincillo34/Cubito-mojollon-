@@ -38,7 +38,7 @@ let helpText;
 let lastDamage = 0;
 
 const WORLD_WIDTH = 1000;
-const WORLD_HEIGHT = 700;
+const WORLD_HEIGHT = 1000;
 
 
 // Cargar el audio
@@ -205,8 +205,8 @@ function spawnEnemy() {
 
     // Aparecer lejos del jugador
     do {
-        x = Phaser.Math.Between(40, WORLD_WIDTH - 40);
-        y = Phaser.Math.Between(40, WORLD_HEIGHT - 40);
+        x = Phaser.Math.Between(40, WORLD_WIDTH - 30);
+        y = Phaser.Math.Between(40, WORLD_HEIGHT - 30);
     } while (
         Phaser.Math.Distance.Between(
             x, y, player.x, player.y
@@ -233,7 +233,7 @@ function spawnEnemy() {
         0, Math.PI * 2
     );
 
-    const speed = Phaser.Math.Between(200, 350);
+    const speed = Phaser.Math.Between(200, 750);
 
     enemy.body.setVelocity(
         Math.cos(angle) * speed,
