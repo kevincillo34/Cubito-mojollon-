@@ -1,0 +1,33 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 15px;
+    background: #151922;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin: 8px 0 15px;
+    color: #69d5ff;
+}
+
+#juego {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #3a4658;
+    border-radius: 8px;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+}
