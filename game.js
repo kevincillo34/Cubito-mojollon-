@@ -37,7 +37,7 @@ let defeatedText;
 let helpText;
 let lastDamage = 0;
 
-const WORLD_WIDTH = 1500;
+const WORLD_WIDTH = 1000;
 const WORLD_HEIGHT = 1000;
 
 
