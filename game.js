@@ -37,7 +37,7 @@ let defeatedText;
 let helpText;
 let lastDamage = 0;
 
-const WORLD_WIDTH = 1000;
+const WORLD_WIDTH = 1500;
 const WORLD_HEIGHT = 1000;
 
 
@@ -94,7 +94,7 @@ function create() {
 
     // Crear nuevos enemigos periódicamente
     this.time.addEvent({
-        delay: 500,
+        delay: 150,
         callback: spawnEnemy,
         callbackScope: this,
         loop: true
@@ -267,7 +267,7 @@ function spawnEnemy() {
     } else {
         // Los demás cambian de dirección aleatoriamente
         this.time.addEvent({
-            delay: Phaser.Math.Between(1500, 3500),
+            delay: Phaser.Math.Between(1800, 3500),
 
             callback: () => {
                 if (!enemy.active || gameOver) return;
